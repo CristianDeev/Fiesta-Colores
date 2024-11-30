@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('./assets/fondo.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0; 
+      
+    animation: backgroundShift 10s infinite;
+    color: #FFFFFF;
+  }
+  
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(31, 30, 30, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(31, 30, 30, 0.8);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    transition: color 0.5s ease;
+  }
+  
+  #dance-floor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .color {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .color:hover {
+    transform: scale(1.1);
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1F618D;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2874A6;
+  }
+  
+  #popular-color, #timer {
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  
